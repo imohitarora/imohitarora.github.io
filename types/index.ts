@@ -27,6 +27,7 @@ export interface Education {
 }
 
 export interface Project {
+    video: string | undefined;
     title: string;
     description: string;
     tech: string[];

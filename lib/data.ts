@@ -50,13 +50,14 @@ export const mohit = {
     ],
     "portfolio": [
         {
+            "video": "https://assets.aboutmohit.com/aboutmohit.mp4",
             "tech": [
                 "next.js",
                 "shacn",
                 "neondatabase",
                 "next-auth",
                 "tailwindcss",
-                "framer-motion"                
+                "framer-motion"
             ],
             "title": "aboutmohit.com",
             "liveUrl": "https://aboutmohit.com",
@@ -64,6 +65,7 @@ export const mohit = {
             "description": "Portfolio App created for personal uses with a small cms for dynamic update."
         },
         {
+            "video": "https://assets.aboutmohit.com/adorabelshop.mp4",
             "tech": [
                 "next.js",
                 "shadcn",

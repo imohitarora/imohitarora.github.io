@@ -1,9 +1,8 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
-import { IconExternalLink, IconBrandGithub } from '@tabler/icons-react';
 import { Project } from '@/types';
-import Image from "next/image";
+import { IconBrandGithub, IconExternalLink } from '@tabler/icons-react';
 
 interface ProjectCardProps {
   project: Project;
@@ -12,12 +11,16 @@ interface ProjectCardProps {
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card className="flex flex-col justify-between bg-background">
-      <CardHeader className="p-0">
-        <Image
-          src='/adorabel.png'
-          width={80}
-          height={48}
-          className="w-full h-48 object-cover rounded-t-lg" alt={""} />
+      <CardHeader className="p-0 overflow-hidden">
+        <video
+          src={project.video}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="pointer-events-none mx-auto h-50 w-full object-cover object-top rounded-t-lg"
+          style={{ borderTopLeftRadius: '0.5rem', borderTopRightRadius: '0.5rem' }}
+        />
       </CardHeader>
       <CardContent className="p-4">
         <h3 className="text-xl font-bold text-foreground mb-2">
